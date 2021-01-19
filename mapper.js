@@ -139,38 +139,6 @@ function openCity(e, x) {
 
 }
 
-
-//calc dist
-function Distance(x1, y1, x2, y2) {
-    return Math.sqrt(Math.pow(x1-x2, 2) + Math.pow(y1-y2, 2));
-}
-
-openCity(null, 'Mumbai');
-
-//Geolocation
-
-if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(position) {
-      console.log(position);
-      let lat= position.coords.latitude;
-      let long=position.coords.longitude;
-      let nearestStore = null;
-      let minDistance = 1e10;
-      for(var i=0; i<getdata.stores.length; ++i) {
-          for(var j=0; j<getdata.stores[i].length; ++j){
-              const distance = Distance(lat, long, getdata.stores[i][j].coordinates.latitude, getdata.stores[i][j].coordinates.longitude);
-              if(distance < minDistance) {
-                  minDistance = distance;
-                  nearestStore = getdata.stores[i][j];
-                //displays current location , for debug use
-                  console.log(nearestStore.zone, minDistance)
-              }
-          }
-      }
-      if(!nearestStore) nearestStore = getdata.stores[0][0];
-      openCity(null, nearestStore.zone);
-      });
-};
 //sidebar store locator
 
 function openNav() {
@@ -183,3 +151,51 @@ function openNav() {
     document.getElementById("main").style.marginLeft= "0";
   }
 
+
+//calc city dist
+function Distance(x1, y1, x2, y2) {
+    return Math.sqrt(Math.pow(x1-x2, 2) + Math.pow(y1-y2, 2));
+}
+
+openCity(null, 'Mumbai');
+
+
+//AutoGeolocation on window onload
+
+if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+      //console.log(position);
+      let lat= position.coords.latitude;
+      let long=position.coords.longitude;
+      let nearestStore = null;
+      let minDistance = 1e10;
+      for(var i=0; i<getdata.stores.length; ++i) {
+          for(var j=0; j<getdata.stores[i].length; ++j){
+              const distance = Distance(lat, long, getdata.stores[i][j].coordinates.latitude, getdata.stores[i][j].coordinates.longitude);
+              if(distance < minDistance) {
+                  minDistance = distance;
+                  nearestStore = getdata.stores[i][j];
+                 //displays  location , for debug use
+                  //console.log(nearestStore.zone, minDistance)
+              }
+          }
+      }
+      if(!nearestStore) nearestStore = getdata.stores[0][0];
+      openCity(null, nearestStore.zone);
+      });
+};
+
+
+
+// button locate on user button press event if not allowed earlier
+$('.searchBtn').click(function(){
+        
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position){
+            let lat= position.coords.latitude;
+            let long=position.coords.longitude;
+          console.log(lat,long);
+        });
+        
+    }
+  });
