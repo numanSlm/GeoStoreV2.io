@@ -1,0 +1,106 @@
+{ 
+    "stores" :
+[    
+                [  
+                        {
+                        "storeNumber": "Mum1",
+                        "id": "1501",
+                        "name": "Store11",
+                        "zone": "Mumbai",
+                        
+                        "coordinates":  {
+                            "latitude": 18.93629942964397, 
+                            "longitude": 72.83652160421936
+                                        }
+                        },
+                        {
+                        "storeNumber": "Mum2",
+                        "id": "1502",
+                        "name": "Store12",
+                        "zone": "Mumbai",
+                        
+                        "coordinates":  {
+                            "latitude": 19.116990914684195,  
+                            "longitude": 72.83196055289238
+                                        }
+                        }
+                ],
+  
+                [
+                        {
+                        "storeNumber": "Pune1",
+                        "id": "1601",
+                        "name": "Store21",
+                        "zone": "Pune",
+                        
+                        "coordinates":  {
+                            "latitude": 18.519513240920734, 
+                            "longitude":73.86802639237582
+                                        }   
+                        },
+                        {
+                        "storeNumber": "Pune2",
+                        "id": "1602",
+                        "name": "Store22",
+                        "zone": "Pune",
+                        
+                        "coordinates":  {
+                            "latitude": 18.482240187701834,  
+                            "longitude": 73.95496473927871
+                                        }
+                        }
+                    ],
+    
+    
+                    [    
+                            {
+                            "storeNumber": "Hyderabad1",
+                            "id": "1701",
+                            "name": "Store31",
+                            "zone": "Hyderabad",
+                            
+                            "coordinates":  {
+                                "latitude": 17.42152127200402,  
+                                "longitude":78.4601169788582
+                                            }   
+                            },
+                            {
+                                "storeNumber": "Hyderabad2",
+                                "id": "1702",
+                                "name": "Store32",
+                                "zone": "Hyderabad",
+                                
+                                "coordinates":  {
+                                    "latitude": 17.58634802760948,  
+                                    "longitude":78.26242340484501
+                                                }   
+                            }
+                    ],
+                    
+                    [
+   
+                            {
+                                "storeNumber": "KolKata1",
+                                "id": "1801",
+                                "name": "Store41",
+                                "zone": "Kolkata",
+                                
+                                "coordinates":  {
+                                    "latitude": 22.85856873854587,  
+                                    "longitude":88.17611855575709
+                                                        }   
+                            },
+                            {
+                                "storeNumber": "KolKata2",
+                                "id": "1802",
+                                "name": "Store42",
+                                "zone": "Kolkata",
+                                
+                                "coordinates":  {
+                                    "latitude":22.952225851138678,
+                                    "longitude": 88.43040117490058 
+                                                        }   
+                            }
+                    ]
+]
+}
