@@ -1,1 +1,1 @@
-# GeoStore
+# GeoStoreV2
