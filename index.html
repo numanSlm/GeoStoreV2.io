@@ -33,10 +33,26 @@
                                     </div>
 
                                     <div class="Search-Form">
-                                         <form class="SearchMe" ><input type="text"  placeholder=" Enter Location to Search" name="search2">
-                                          <button type="submit"><i class="fa fa-search"></i></button></form>
-                                    </div>      
-                              
+                                         <form class="SearchMe" id="search-me-form">
+                                                <input type="text" id="gSearch" placeholder=" Enter Location to Search">
+                                                <button type="submit"><i class="fa fa-search"></i></button>
+                                          </form>
+                                    </div> 
+                                    <!--display stores-->
+                                    <div class="stores-list-container">
+                                          <div id="stores-list">
+                                                
+                                          </div>
+                                    </div> 
+                                    <!--end stores--> 
+                                    <div class="store-search-template" style="display:none;">
+                                          <p class="store-name">Inorbit Mall, Malad (W)</p>
+                                          <span class="store-distance">10 KM Away</span>
+                                          <p class="store-address">F-58, First Floor Inorbit Mall, Link Road Malad (West), Mumbai - 400064 .</p>
+                                          <i class="fa fa-phone store-contact-icon"></i>
+                                          <i class="fa fa-whatsapp store-contact-icon"></i>
+                                    </div>   
+                                    
                               </div>
                             </div>
                         <!--End Sidebar-->
@@ -295,7 +311,9 @@
 <!--end foot-->
                 
 
-    
+<script defer
+src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyAAZLx1w6-5NUxlrk-qWmiwmgoJhq3DuRU&callback=initAutocomplete">
+</script>
       <script type="text/javascript" src="mapper.js"></script>
       <!-- Latest compiled and minified JavaScript -->
 <script async defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

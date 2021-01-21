@@ -19,7 +19,7 @@ header {
 .content {
     width: 94%;
     margin: 4em auto;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     text-align: justify;
 }
@@ -75,8 +75,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #ddd;
     font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 /*end nav*/
 
@@ -177,10 +182,9 @@ nav ul li a {
     display: none;
 }
 /*media-Query*/
-@media(max-width: 786px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
 
+  
+@media(max-width: 786px) {
     .logo {
           position: fixed;
           top: 0;
@@ -211,6 +215,9 @@ nav ul li a {
           display: block;
     }
 
+}
+@media(max-width:700px){
+  .sidebar{position: absolute;}
 }
 /*end-media Query*/
 
@@ -312,20 +319,20 @@ nav ul li a {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #eee;
     overflow-x: hidden;
-    transition: 0s;
+    transition: 0.2s;
     padding-top: 60px;
   }
   
   .sidebar a {
-      font-family: "Helvetica Neue",sans-serif;
+    font-family: "Helvetica Neue",sans-serif;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.2s;
+    transition: 0.01s;
   }
   .Side-container-wrapper{
 
@@ -334,8 +341,6 @@ nav ul li a {
   }
   /*search instuction to user*/
     .StoreNote{
-    font-size: 20px;
-    color:white;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -344,11 +349,11 @@ nav ul li a {
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 1px 50px 1px 50px;
+    padding: 1px 10px 1px 10px;
   }
   .searchBtn{
       color:black;
-      font-size: 20px;
+      font-size: 16px;
       font-family:"Helvetica Neue",sans-serif;
       background:white;
       border-radius: 12px;
@@ -418,10 +423,41 @@ nav ul li a {
   .openbtn:hover {
     background-color: #444;
   }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
+   
 
 /*end-seidebar*/
+
+/*Store display in sidebars*/
+
+/* Store template style */
+.stores-list-container {
+  margin-top: 10px;
+}
+
+.store-search-template {
+  padding: 5px 10px;
+  margin: 5px 10px;
+  line-height: normal;
+  border-bottom: 1px solid #ccc;
+}
+
+.store-name {
+  font-weight: 600;
+  font-size: 14px;
+  display: inline;
+}
+
+.store-distance {
+  float: right;
+  display: inline;
+}
+
+.store-address {
+  font-weight: 500!important;
+  color: #666;
+  margin-top: 5px;
+}
+
+.store-contact-icon { 
+  width: 24px;
+}

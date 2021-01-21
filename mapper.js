@@ -1,112 +1,174 @@
 //json data
 var getdata={ 
-      "stores" :
-  [    
-                  [  
-                          {
-                          "storeNumber": "Mum1",
-                          "id": "1501",
-                          "name": "Store11",
-                          "zone": "Mumbai",
-                          
-                          "coordinates":  {
-                              "latitude": 18.93629942964397, 
-                              "longitude": 72.83652160421936
-                                          }
-                          },
-                          {
-                          "storeNumber": "Mum2",
-                          "id": "1502",
-                          "name": "Store12",
-                          "zone": "Mumbai",
-                          
-                          "coordinates":  {
-                              "latitude": 19.116990914684195,  
-                              "longitude": 72.83196055289238
-                                          }
-                          }
-                  ],
+    "stores" :
+[    
+                [  
+                        {
+                        "storeNumber": "Mum1",
+                        "id": "1",
+                        "name": "Inorbit Mall, Malad (W)",
+                        "zone": "Mumbai",
+                        "address": "F-58, First Floor Inorbit Mall, Link Road Malad (West), Mumbai - 400064 .",
+                        "tel": {
+                           "tel1" : "022 - 28778735",
+                           "tel2" : "022 - 28778735"
+                        },
+                        "timing": "10.00 am to 9.30 pm",
+                        "workingdays": "All days",
+                        "gmaps" : "https://www.google.com/maps/place/Envi+Salon+And+Spa+-+Malad/@19.173549,72.835643,16z/data=!4m5!3m4!1s0x0:0xbb59275dee1468f6!8m2!3d19.1735488!4d72.8356428?hl=en-US",                        
+                        "whatsapp" : "https://api.whatsapp.com/send?phone=919152005222&text=hi",
+                        "mail" : "info@envisalon.in",
+                        "readmore" : "https://envi1.hscprojects.com/inorbit-mall-malad-west/",
+                        "coordinates":  {
+                            "latitude": 19.17417728738802,  
+                            "longitude": 72.83570737301531
+                                        } 
+                        },
+                        
+                        {
+                        "storeNumber": "Mum2",
+                        "id": "2",
+                        "name": "Oberoi Mall, Goregaon (E)",
+                        "zone": "Mumbai",
+                        "address": "S-11, Oberoi Mall, 2nd Floor Off, Western Exp Highway, Goregaon (E), Mumbai-400063 .",
+                        "tel": {
+                           "tel1" : "022 - 28428111",
+                           "tel2" : "022 - 28415858"
+                        },
+                        "timing": "10.00 am to 9.30 pm",
+                        "workingdays": "All days",
+                        "gmaps" : "https://www.google.com/maps/place/Envi+Salon+%26+Spa+-+Goregaon+East/@19.173822,72.860811,19z/data=!4m5!3m4!1s0x0:0x73ea43453be8fed6!8m2!3d19.1738217!4d72.8608108?hl=en-US",                        
+                        "whatsapp" : "https://api.whatsapp.com/send?phone=919152005222&text=hi",
+                        "mail" : "info@envisalon.in",
+                        "readmore" : "https://envi1.hscprojects.com/oberoi-mall-goregoan-east/",
+                        "coordinates":  {
+                            "latitude": 19.17389293567528,  
+                            "longitude": 72.86082441104486
+                                        } 
+                        },
+
+
+                        {
+                        "storeNumber": "Mum3",
+                        "id": "3",
+                        "name": "Link Road, Andheri West",
+                        "zone": "Mumbai",
+                        "address": "Unit 2, Stanford Plaza, Besides Orritel West Hotel, Off, New Link Rd, Anand Nagar, Andheri West, Mumbai, Maharashtra - 400047 .",
+                        "tel": {
+                           "tel1" : "+91 77770 04034"
+                        },
+                        "timing": "10.00 am to 9.30 pm",
+                        "workingdays": "All days",
+                        "gmaps" : "https://www.google.com/maps/place/Envi+Salon+and+Spa+-+Andheri/@19.139763,72.834226,16z/data=!4m5!3m4!1s0x0:0x9dc312acfd587861!8m2!3d19.1397632!4d72.8342263?hl=en-US",                        
+                        "whatsapp" : "https://api.whatsapp.com/send?phone=919152005222&text=hi",
+                        "mail" : "info@envisalon.in",
+                        "readmore" : "https://envi1.hscprojects.com/link-road-andheri-west/",
+                        "coordinates":  {
+                            "latitude": 19.14018870149455,  
+                            "longitude": 72.83433328835888
+                                        } 
+                        },
+                ],
+  
+                [
+                        {
+                        "storeNumber": "Pune1",
+                        "id": "4",
+                        "name": "Westend Mall, Pune",
+                        "zone": "Pune",
+                        "address": "Unit no 13, Higher Ground Floor, Westend Mall, Aundh, Pune - 411007",
+                        "tel": {
+                           "tel1" : "020 - 27207481",
+                           "tel2" : "020 - 27207482"
+                        },
+                        "timing": "10.00 am to 9.30 pm",
+                        "workingdays": "All days",
+                        "gmaps" : "https://www.google.com/maps/place/Envi+Salon+%26+Spa+-+Aundh/@18.561485,73.80722,12z/data=!4m5!3m4!1s0x0:0x59eab11c8595953f!8m2!3d18.561485!4d73.80722?hl=en-US",                        
+                        "whatsapp" : "https://api.whatsapp.com/send?phone=919152005222&text=hi",
+                        "mail" : "info@envisalon.in",
+                        "readmore" : "https://envi1.hscprojects.com/westend-mall-pune/",
+                        "coordinates":  {
+                            "latitude": 18.57189952984978,  
+                            "longitude": 73.80447341801286
+                                        } 
+                        },
+                        
+                        {
+                        "storeNumber": "Pune2",
+                        "id": "5",
+                        "name": "Amanora Mall, Pune",
+                        "zone": "Pune",
+                        "address": "Store no. WB-GF 21, Ground floor, Hadapsar Kharadi, Bypass Hadapsar, Pune - 411028.",
+                        "tel": {
+                           "tel1" : "020 - 67267945",
+                           "tel2" : "020 - 67267946"
+                        },  
+                        "timing": "10.00 am to 9.30 pm",
+                        "workingdays": "All days",
+                        "gmaps" : "https://www.google.com/maps/place/Envi+Salon+%26+Spa+-+Amanora+Mall/@18.518648,73.934131,14z/data=!4m5!3m4!1s0x0:0xf59c52e9ea7be834!8m2!3d18.518648!4d73.934131?hl=en-US",                        
+                        "whatsapp" : "https://api.whatsapp.com/send?phone=919152005222&text=hi",
+                        "mail" : "info@envisalon.in",
+                        "readmore" : "https://envi1.hscprojects.com/amanora-mall-pune/",
+                        "coordinates":  {
+                            "latitude": 18.520194334655034,  
+                            "longitude": 73.93430266137419
+                                        } 
+                        }
+                    ],
     
-                  [
-                          {
-                          "storeNumber": "Pune1",
-                          "id": "1601",
-                          "name": "Store21",
-                          "zone": "Pune",
-                          
-                          "coordinates":  {
-                              "latitude": 18.519513240920734, 
-                              "longitude":73.86802639237582
-                                          }   
-                          },
-                          {
-                          "storeNumber": "Pune2",
-                          "id": "1602",
-                          "name": "Store22",
-                          "zone": "Pune",
-                          
-                          "coordinates":  {
-                              "latitude": 18.482240187701834,  
-                              "longitude": 73.95496473927871
-                                          }
-                          }
-                      ],
-      
-      
-                      [    
-                              {
-                              "storeNumber": "Hyderabad1",
-                              "id": "1701",
-                              "name": "Store31",
-                              "zone": "Hyderabad",
-                              
-                              "coordinates":  {
-                                  "latitude": 17.42152127200402,  
-                                  "longitude":78.4601169788582
-                                              }   
-                              },
-                              {
-                                  "storeNumber": "Hyderabad2",
-                                  "id": "1702",
-                                  "name": "Store32",
-                                  "zone": "Hyderabad",
-                                  
-                                  "coordinates":  {
-                                      "latitude": 17.58634802760948,  
-                                      "longitude":78.26242340484501
-                                                  }   
-                              }
-                      ],
-                      
-                      [
-     
-                              {
-                                  "storeNumber": "KolKata1",
-                                  "id": "1801",
-                                  "name": "Store41",
-                                  "zone": "Kolkata",
-                                  
-                                  "coordinates":  {
-                                      "latitude": 22.85856873854587,  
-                                      "longitude":88.17611855575709
-                                                          }   
-                              },
-                              {
-                                  "storeNumber": "KolKata2",
-                                  "id": "1802",
-                                  "name": "Store42",
-                                  "zone": "Kolkata",
-                                  
-                                  "coordinates":  {
-                                      "latitude":22.952225851138678,
-                                      "longitude": 88.43040117490058 
-                                                          }   
-                              }
-                      ]
-  ]
-  }
+    
+                    [    
+                        {
+                        "storeNumber": "hyderabad1",
+                        "id": "6",
+                        "name": "Inorbit Mall - Hyderabad",
+                        "zone": "Hyderabad",
+                        "address": "G 52, Ground Floor, Mind Space, Madhapur, Opp. Durgam Cheruve, (Cydrabad), Hyderabad - 500081.",
+                        "tel": {
+                           "tel1" : "040 - 40036014",
+                           "tel2" : "040 - 40036015"
+                        },  
+                        "timing": "10.00 am to 9.30 pm",
+                        "workingdays": "All days",
+                        "gmaps" : "https://www.google.com/maps/place/Envi+Salon+%26+Spa+-+Madhapur/@17.4347,78.386955,16z/data=!4m5!3m4!1s0x0:0x1346ed361af516a4!8m2!3d17.4347!4d78.386955?hl=en-US",                        
+                        "whatsapp" : "https://api.whatsapp.com/send?phone=919152005222&text=hi",
+                        "mail" : "info@envisalon.in",
+                        "readmore" : "https://envi1.hscprojects.com/inorbit-mall-hyderabad/",
+                        "coordinates":  {
+                            "latitude": 17.43521179642681,  
+                            "longitude": 78.38697645767178
+                                        } 
+                        },
+
+                        {
+                        "storeNumber": "hyderabad2",
+                        "id": "7",
+                        "name": "Banjara Hills - Hyderabad",
+                        "zone": "Hyderabad",
+                        "address": "H.No. 8-2-684/3/162, Road No 12, Banjara Hills, Hyderabad - 500034.",
+                        "tel": {
+                           "tel1" : "+91 9393601415",
+                           "tel2" : "040 - 9393601416"
+                        },  
+                        "timing": "10.00 am to 9.30 pm",
+                        "workingdays": "All days",
+                        "gmaps" : "https://www.google.com/maps/place/Envi+Salon+%26+Spa+-+Banjara+Hills/@17.412536,78.430904,14z/data=!4m5!3m4!1s0x0:0x2a2723a5c3fdb157!8m2!3d17.412536!4d78.430904?hl=en-US",                        
+                        "whatsapp" : "https://api.whatsapp.com/send?phone=919152005222&text=hi",
+                        "mail" : "info@envisalon.in",
+                        "readmore" : "https://envi1.hscprojects.com/banjara-hills-hyderabad/",
+                        "coordinates":  {
+                            "latitude": 17.414747218713707,  
+                            "longitude": 78.43081816931291
+                                        } 
+                        },
+                    ],
+                    
+                  
+]
+}
 
 //end json data
+
 // Menu button
 
 $(document).ready(function() {
@@ -142,13 +204,11 @@ function openCity(e, x) {
 //sidebar store locator
 
 function openNav() {
-    document.getElementById("mySidebar").style.width = "50%";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySidebar").style.width = "30%"; 
   }
   
-  function closeNav() {
+function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
   }
 
 
@@ -199,3 +259,79 @@ $('.searchBtn').click(function(){
         
     }
   });
+  
+//store template render
+
+function clearStoreSearch(storeList) {
+    while(storeList.firstChild) storeList.removeChild(storeList.firstChild);
+}
+
+function euclideanDistance(x1, y1, x2, y2)  {
+    var distance = Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2), 2);
+    // convert distance to KMs and return
+    return distance;
+}
+
+function getNearestStores(lat, long) {
+    var stores = [];
+    for(var store in stores) {
+
+    }
+    return stores;
+}
+
+
+window.addEventListener('DOMContentLoaded',function(){
+    var searchForm = document.querySelector('#search-me-form');
+    searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var searchQuery = document.querySelector('#gSearch');
+        // This should run after you decide the city or stores
+        // get searched location from Map API
+        var lat = 12.131313;
+        var long = 72.131141;
+        // Find nearest stores, hard coding for now
+        // var stores = getNearestStores(lat, long);
+        var stores = getdata.stores[0];
+        
+        // calculate distance for each store from searched location move to getNearestStores
+        for(store in stores) {
+            stores[store].distance = euclideanDistance(lat, long, stores[store].coordinates.latitude, stores[store].coordinates.longitude);
+        }
+
+        var storeTemplate = document.querySelectorAll('.store-search-template')[0];
+        var storeList = document.querySelector('#stores-list');
+        clearStoreSearch(storeList);
+        for(var store in stores) {
+            var storeNode = storeTemplate.cloneNode(true)
+            storeNode.style.display = 'block';
+            storeNode.querySelectorAll('.store-name')[0].innerHTML = stores[store].name;
+            storeNode.querySelectorAll('.store-address')[0].innerHTML = stores[store].address;
+            storeNode.querySelectorAll('.store-distance')[0].innerHTML = "Just " + stores[store].distance + " KMs Away"; 
+            // storeList.querySelectorAll('.store-map-link')[0].href = "https://map.google.com/?lat=" + lat + "&long=" + long;
+            storeList.appendChild(storeNode);
+        }
+    });
+    
+})
+
+//search auto autocomplete
+let autocomplete;
+function initAutocomplete(){
+    autocomplete=new google.maps.places.Autocomplete(
+        document.getElementById("gSearch"),
+    
+    {
+        componentRestrictions:{'country':['IN']} 
+    });
+    autocomplete.addListener('place_changed',onPlaceChanged);
+}
+
+function onPlaceChanged(){
+    var place = autocomplete.getPlace();
+
+     if(!place.geometry){
+        document.getElementById('gsearch').placeholder='Enter a Place';
+    }  
+}
+//
