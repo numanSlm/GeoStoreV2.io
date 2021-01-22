@@ -216,9 +216,7 @@ nav ul li a:hover {
     }
 
 }
-@media(max-width:700px){
-  .sidebar{position: absolute;}
-}
+
 /*end-media Query*/
 
 /*icon-container*/
@@ -311,19 +309,23 @@ nav ul li a:hover {
 /*end-footer*/
 
 /*sidebar*/
+
 .sidebar {
-    font-family: "Helvetica Neue",sans-serif;
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #eee;
-    overflow-x: hidden;
-    transition: 0.2s;
-    padding-top: 60px;
-  }
+  height: 100%;
+  width: 400px;
+  min-width:0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -400px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: all 200ms ease;
+  padding-top: 60px;
+}
+
+/* sidebar transition animation */
+.sidebar--show {transform: translateX(400px);}
   
   .sidebar a {
     font-family: "Helvetica Neue",sans-serif;
@@ -435,6 +437,7 @@ nav ul li a:hover {
 }
 
 .store-search-template {
+  color: #fff;
   padding: 5px 10px;
   margin: 5px 10px;
   line-height: normal;
@@ -463,5 +466,5 @@ nav ul li a:hover {
 }
 
 .socLinks{
-  display: inline;
+  display: flex;
 }

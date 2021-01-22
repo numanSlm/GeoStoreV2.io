@@ -199,14 +199,14 @@ function openCity(e, x) {
 }
 
 //sidebar store locator expander
-
 function openNav() {
-    document.getElementById("mySidebar").style.width = "40vw"; 
+    document.getElementById("mySidebar").classList.add("sidebar--show");
   }
-  
-function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
+    
+  function closeNav() {
+    document.getElementById("mySidebar").classList.remove("sidebar--show");
   }
+
 
 
 //calc city dist for tabs on main page
