@@ -29,13 +29,13 @@
                                     <div class="StoreNote">Please enter search location</div>
 
                                     <div class="Location-Button">
-                                          <button class="searchBtn"> <i class="fa fa-compass"></i>    Use current location</button>
+                                          <button class="searchBtn" onclick="geolocation()"> <i class="fa fa-compass"></i>    Use current location</button>
                                     </div>
 
                                     <div class="Search-Form">
                                          <form class="SearchMe" id="search-me-form">
                                                 <input type="text" id="gSearch" placeholder=" Enter Location to Search">
-                                                <button type="submit"><i class="fa fa-search"></i></button>
+                                               <!--  <button type="submit"><i class="fa fa-search"></i></button> -->
                                           </form>
                                     </div> 
                                     <!--display stores-->
@@ -49,8 +49,9 @@
                                           <p class="store-name">Inorbit Mall, Malad (W)</p>
                                           <span class="store-distance">10 KM Away</span>
                                           <p class="store-address">F-58, First Floor Inorbit Mall, Link Road Malad (West), Mumbai - 400064 .</p>
-                                          <i class="fa fa-phone store-contact-icon"></i>
-                                          <i class="fa fa-whatsapp store-contact-icon"></i>
+                                          <a href="" class="" target="_blank" rel="noopener noreferrer"><i class="fa fa-phone store-contact-icon"></i></a>
+                                          <a href="" class="" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp store-whatsapp"></i></a>
+                                          <a href="" class="store-map-link" target="_blank" rel="noopener noreferrer"><i class= "fa fa-map"></i><i></i></a>
                                     </div>   
                                     
                               </div>
@@ -301,7 +302,7 @@
               <a href="#"><span class="fa fa-youtube"></span></a>
             </div>
             <div class="sc-footer-copyright">
-              <p>&copy; Copyright <a rel="nofollow" href="index.html">Stores</a>. All right reserved.</p>
+              <!-- <p>&copy; Copyright <a rel="nofollow" href="index.html">Stores</a>. All right reserved.</p> -->
             </div>         
           </div>
         </div>
