@@ -54,7 +54,8 @@ var getdata={
         "zone": "Mumbai",
         "address": "Unit 2, Stanford Plaza, Besides Orritel West Hotel, Off, New Link Rd, Anand Nagar, Andheri West, Mumbai, Maharashtra - 400047 .",
         "tel": {
-            "tel1" : "+91 77770 04034"
+            "tel1" : "+91 77770 04034",
+            "tel2" : "0"
         },
         "timing": "10.00 am to 9.30 pm",
         "workingdays": "All days",
@@ -337,7 +338,9 @@ function fillStoreList(lat, long) {
         storeNode.querySelectorAll('.store-address')[0].innerHTML = stores[store].address;
         storeNode.querySelectorAll('.store-distance')[0].innerHTML = "Just " + stores[store].distance.toFixed(2) + " KMs Away"; 
         storeNode.querySelectorAll('.store-map-link')[0].href =stores[store].gmaps
-        storeNode.querySelectorAll('.store-whatsapp')[0].href = stores[store].whatsapp
+        storeNode.querySelectorAll('.store-whatsapp')[0].href =stores[store].whatsapp
+        storeNode.querySelectorAll('.store-call-1')[0].href="tel:"+stores[store].tel.tel1
+        storeNode.querySelectorAll('.store-call-2')[0].href="tel:"+stores[store].tel.tel2
         storeList.appendChild(storeNode);
     }
 }

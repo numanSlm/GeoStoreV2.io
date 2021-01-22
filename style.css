@@ -461,3 +461,7 @@ nav ul li a:hover {
 .store-contact-icon { 
   width: 24px;
 }
+
+.socLinks{
+  display: inline;
+}
