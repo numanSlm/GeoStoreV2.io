@@ -468,3 +468,8 @@ nav ul li a:hover {
 .socLinks{
   display: flex;
 }
+
+#MyCurrentLoc{
+  display: inline;
+  color:white;
+}
