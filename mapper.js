@@ -271,7 +271,7 @@ function geolocation(){
         if (status == google.maps.GeocoderStatus.OK) {
             //
             var address = (results[0].formatted_address);
-            MyCurrentLoc.textContent = `Location:${address} `;
+            MyCurrentLoc.textContent = ` ${address} `;
         }
     });
 }
@@ -336,7 +336,9 @@ function getNearestStores(lat, long) {
     for(var store in stores) {
         stores[store].distance =  euclideanDistance(lat, long, stores[store].coordinates.latitude, stores[store].coordinates.longitude); 
     }
-    return stores.sort(function sorter(a, b){return a.distance > b.distance ? 1 : -1}).slice(0, 3);
+    return stores.sort(function sorter(a, b){
+        return a.distance > b.distance ? 1 : -1
+    }).slice(0, 3);
 }
 
 // filling stores
