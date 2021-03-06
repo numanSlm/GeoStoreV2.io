@@ -21,7 +21,7 @@ On Window load, a prompt is displayed which asks for the users consent to access
 
 Upon allowing this access, the store automatically selects the zone(Mum,Pun,Hyd,Kol) in which the users location falls in and displays the stores-list in users zone.
 
-![Zone Stores](docs/zone.png)
+![Zone Stores](docs/zonal.png)
 
 
 
@@ -56,7 +56,7 @@ Now, if the user wishes to do a manual search, he can do so by using the search 
 
 Users Location Via Button 
 
-![Result](docs/me1.jpg)
+![Result](docs/mem.jpg)
 
 Via Search Location Field
 
