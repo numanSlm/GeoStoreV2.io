@@ -2,7 +2,9 @@
 
 GeoStore is a store locator which helps to locate the nearest stores based on user's input or his current location automatically.
 
-#
+
+## Check out the [Demo](https://numanslm.github.io/GeoStoreV2.io/)
+
 
 ### Requirements:
 You need a Google API key with billin enabled for the API access to work ! [Get your Key here](https://developers.google.com/maps/documentation/javascript/get-api-key)
